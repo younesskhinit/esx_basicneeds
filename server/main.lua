@@ -22,6 +22,170 @@ ESX.RegisterUsableItem('water', function(source)
 	TriggerClientEvent('esx:showNotification', source, _U('used_water'))
 end)
 
+--Uncomment this if you want to use Unicorn job items
+--[[(delete me)
+ESX.RegisterUsableItem('soda', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('soda', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_soda'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('jusfruit', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('jusfruit', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_jusfruit'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('icetea', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('icetea', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_icetea'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('energy', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('energy', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_energy'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('drpepper', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('drpepper', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_drpepper'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('limonade', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('limonade', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 250000)
+	TriggerClientEvent('esx_basicneeds:onDrink', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_limonade'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 10000)
+end)
+
+ESX.RegisterUsableItem('bolcacahuetes', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('bolcacahuetes', 1)
+
+	TriggerClientEvent('esx_status:remove', source, 'thirst', 4000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_bolcacahuetes'))
+end)
+
+ESX.RegisterUsableItem('bolnoixcajou', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('bolnoixcajou', 1)
+
+	TriggerClientEvent('esx_status:remove', source, 'thirst', 4000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_bolnoixcajou'))
+end)
+
+ESX.RegisterUsableItem('bolpistache', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('bolpistache', 1)
+
+	TriggerClientEvent('esx_status:remove', source, 'thirst', 4000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_bolpistache'))
+end)
+
+ESX.RegisterUsableItem('bolchips', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('bolchips', 1)
+
+	TriggerClientEvent('esx_status:remove', source, 'thirst', 4000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_bolchips'))
+end)
+
+ESX.RegisterUsableItem('saucisson', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('saucisson', 1)
+
+	TriggerClientEvent('esx_status:remove', source, 'thirst', 2000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 250000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_saucisson'))
+end)
+
+ESX.RegisterUsableItem('grapperaisin', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('grapperaisin', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 50000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_grapperaisin'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 2000)
+end)
+
+ESX.RegisterUsableItem('ice', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('ice', 1)
+	TriggerClientEvent('esx_basicneeds:healPlayer',source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_ice'))
+end)
+
+ESX.RegisterUsableItem('mixapero', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('mixapero', 1)
+
+	TriggerClientEvent('esx_status:add', source, 'thirst', 225000)
+	TriggerClientEvent('esx_status:add', source, 'hunger', 225000)
+	TriggerClientEvent('esx_basicneeds:onEat', source)
+	TriggerClientEvent('esx:showNotification', source, _U('used_mixapero'))
+	TriggerClientEvent('esx_status:remove', source, 'drunk', 7000)
+end)
+
+ESX.RegisterUsableItem('menthe', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	xPlayer.removeInventoryItem('menthe', 1)
+
+	TriggerClientEvent('esx:showNotification', source, _U('used_menthe'))
+end)
+--]]--delete me
+
 TriggerEvent('es:addGroupCommand', 'heal', 'admin', function(source, args, user)
 	-- heal another player - don't heal source
 	if args[1] then
