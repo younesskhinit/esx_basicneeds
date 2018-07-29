@@ -30,6 +30,17 @@ git clone https://github.com/ESX-Org/esx_basicneeds [esx]/esx_basicneeds
 start esx_basicneeds
 ```
 
+If you Want to use esx_unicorn job item uncomment this in server/main.lua
+
+```
+--[[(delete me)
+```
+AND
+```
+--]]--delete me
+```
+
+
 # Legal
 ### License
 esx_basicneeds - thirst and hunger system
